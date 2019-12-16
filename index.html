@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./main.css">
+  <title>Simple Fasting Calculator</title>
+  <meta name="description" content="Know when your fasting cycle ends with minimal thinking.">
+</head>
+<body>
+  <section class="appContainer">
+    <div id="fastingCalculator">
+      <h2>Fasting Calculator</h2>
+      <form action="">
+        <div class="row">
+          <label class="" for="mealHour" id="mealHourLabel">Last meal:</label>
+          <div class="time">
+            <select class="" name="mealHour" id="mealHour">
+              <option value="00">00</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20" selected="selected">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+            </select>
+            <label class="" for="mealMinutes" id="mealMinutesLabel">:</label>
+            <select class="" name="mealMinutes" id="mealMinutes">
+              <option value="00" selected="selected">00</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>
+            </select>
+            <p>hs</p>
+          </div>
+        </div>
+        <div class="row">
+          <label class="" for="fastingHours" id="fastingHoursLabel">Fast duration:</label>
+          <div class="time">
+            <select class="" name="fastingHours" id="fastingHours">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16" selected="selected">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+            </select>
+            <p>hours</p>
+          </div>
+        </div>
+        <div class="row">
+          <label for="result">Next meal at:</label>
+          <div class="time">
+            <div id="hourResult">00</div>
+            <p>:</p>
+            <div id="minResult">00</div>
+            <p>hs</p>
+          </div>
+        </div>
+        <button type="button" class="btn" id="btn-calculate">Calculate</button>
+      </form>
+    </div>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>

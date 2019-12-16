@@ -1,0 +1,69 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+section.appContainer {
+  height: 100vh;
+  padding: 2rem;
+}
+
+#fastingCalculator {
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 250px;
+  text-align: center;
+}
+
+#fastingCalculator h2 {
+  background-color: #ff843d;
+  border-radius: 15px 15px 0 0;
+  padding: 1rem;
+}
+
+#fastingCalculator form {
+  padding: 1rem;
+}
+
+#fastingCalculator form .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+#fastingCalculator form .row .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fastingCalculator form .row .time * {
+  margin-left: 5px;
+}
+
+#fastingCalculator form select {
+  padding: 0.3rem;
+}
+
+#fastingCalculator button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid #000; */
+  background-color: #ff843d;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+#fastingCalculator button:hover {
+  filter: brightness(110%);
+}
+#fastingCalculator button:active {
+  filter: brightness(90%);
+}
