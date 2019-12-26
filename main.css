@@ -1,3 +1,7 @@
+:root {
+  --primaryColor: #fd7373;
+}
+
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -19,10 +23,14 @@ section.appContainer {
   text-align: center;
 }
 
-#fastingCalculator h2 {
-  background-color: #ff843d;
+#fastingCalculator .title {
+  background-color: var(--primaryColor);
   border-radius: 15px 15px 0 0;
   padding: 1rem;
+}
+
+#fastingCalculator #icon {
+  height: 30px;
 }
 
 #fastingCalculator form {
@@ -56,13 +64,13 @@ section.appContainer {
   border-radius: 10px;
   border: none;
   /* border: 1px solid #000; */
-  background-color: #ff843d;
+  background-color: var(--primaryColor);
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
 }
 #fastingCalculator button:hover {
-  filter: brightness(110%);
+  filter: brightness(150%);
 }
 #fastingCalculator button:active {
   filter: brightness(90%);
